@@ -128,7 +128,7 @@ Espressif USB JTAG/Serial Debug Unit
 ```
 
 <p align="center">
-  <img src="./image/lsusb-verification.JPG" alt="ESP32S3 detected by Linux" width="85%">
+  <img src="./images/lsusb-verification.png" alt="ESP32S3 detected by Linux" width="85%">
 </p>
 
 ---
@@ -226,21 +226,34 @@ aiov2_ctl --watch
 
 
 
-## 🚧 𝑹𝒐𝒂𝒅𝒎𝒂𝒑
+## 🚧 Roadmap
 
-𝑻𝒉𝒊𝒔 𝒓𝒆𝒑𝒐𝒔𝒊𝒕𝒐𝒓𝒚 𝒊𝒔 𝒂𝒄𝒕𝒊𝒗𝒆𝒍𝒚 𝒖𝒏𝒅𝒆𝒓 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒎𝒆𝒏𝒕.
+This project is actively under development, and many more features are planned for future releases.
 
-𝑼𝒑𝒄𝒐𝒎𝒊𝒏𝒈 𝒂𝒅𝒅𝒊𝒕𝒊𝒐𝒏𝒔 𝒊𝒏𝒄𝒍𝒖𝒅𝒆:
+### Planned Improvements
 
-- 𝑾𝒊-𝑭𝒊 𝒖𝒕𝒊𝒍𝒊𝒕𝒊𝒆𝒔
-- 𝑩𝑳𝑬 𝒕𝒐𝒐𝒍𝒔
-- 𝑮𝑷𝑰𝑶 𝒆𝒙𝒂𝒎𝒑𝒍𝒆𝒔
-- 𝑭𝒊𝒓𝒎𝒘𝒂𝒓𝒆 𝒆𝒙𝒂𝒎𝒑𝒍𝒆𝒔
-- 𝑯𝒂𝒓𝒅𝒘𝒂𝒓𝒆 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒕𝒊𝒐𝒏𝒔
-- 𝑷𝒆𝒓𝒇𝒐𝒓𝒎𝒂𝒏𝒄𝒆 𝒃𝒆𝒏𝒄𝒉𝒎𝒂𝒓𝒌𝒔
-- 𝑨𝒅𝒅𝒊𝒕𝒊𝒐𝒏𝒂𝒍 𝒖𝑪𝒐𝒏𝒔𝒐𝒍𝒆 𝒊𝒏𝒕𝒆𝒈𝒓𝒂𝒕𝒊𝒐𝒏𝒔
+- 🖨️ Custom 3D-printed internal mount
+- 📶 Wi-Fi and BLE utilities
+- 📡 GPIO examples and hardware expansion
+- 🔌 Additional uConsole internal modifications
+- 💻 Firmware examples and sample projects
+- 📖 Detailed documentation and tutorials
+- ⚡ Performance testing and benchmarks
 
-𝑴𝒐𝒓𝒆 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 𝒄𝒐𝒎𝒊𝒏𝒈 𝒔𝒐𝒐𝒏.
+---
 
+## 💡 Community Feedback
 
+This project is built for the community, and I'd love to hear your ideas.
 
+If you have suggestions, feature requests, or improvements, feel free to open an **Issue** or start a **Discussion**.
+
+I'd especially like to know:
+
+- What hardware should I integrate next?
+- What projects would you like to see on the uConsole?
+- Are there any features or improvements you'd find useful?
+
+Your feedback will help shape the future of this project.
+
+⭐ If you found this project useful, consider giving it a Star—it helps others discover it too.
