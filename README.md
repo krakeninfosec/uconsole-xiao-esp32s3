@@ -128,7 +128,7 @@ Espressif USB JTAG/Serial Debug Unit
 ```
 
 <p align="center">
-  <img src="./image/lsusb-verification.mp4" alt="ESP32S3 detected by Linux" width="85%">
+  <img src="./image/lsusb-verification.JPG" alt="ESP32S3 detected by Linux" width="85%">
 </p>
 
 ---
@@ -224,7 +224,6 @@ aiov2_ctl --watch
 >
 > On the AIO v2 Board, some hardware modules are powered off by default. If a device isn't detected, check its status with `aiov2_ctl --status` before troubleshooting drivers or hardware connections.
 
-<img width="3472" height="4640" alt="lsusb" src="https://github.com/user-attachments/assets/92f50bbe-9c5c-490e-942f-a45ad0f929ba" />
 
 
 ## 🚧 𝑹𝒐𝒂𝒅𝒎𝒂𝒑
