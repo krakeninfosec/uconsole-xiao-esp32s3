@@ -83,23 +83,25 @@
 
 ## 𝑮𝒂𝒍𝒍𝒆𝒓𝒚
 
-### 𝑾𝒊𝒓𝒊𝒏𝒈 𝑫𝒊𝒂𝒈𝒓𝒂𝒎
+## 🔌 USB Wiring Diagram
 
-> 𝑼𝑺𝑩 𝒘𝒊𝒓𝒊𝒏𝒈 𝒃𝒆𝒕𝒘𝒆𝒆𝒏 𝒕𝒉𝒆 𝑯𝒂𝒄𝒌𝒆𝒓𝑮𝒂𝒅𝒈𝒆𝒕𝒔 𝑨𝑰𝑶/𝑬𝒙𝒑𝒂𝒏𝒔𝒊𝒐𝒏 𝑩𝒐𝒂𝒓𝒅 𝒂𝒏𝒅 𝒕𝒉𝒆 𝑺𝒆𝒆𝒆𝒅 𝑺𝒕𝒖𝒅𝒊𝒐 𝑿𝑰𝑨𝑶 𝑬𝑺𝑷32𝑺3.
+The diagram below shows the required USB connections between the **HackerGadgets AIO/Expansion Board** and the **Seeed Studio XIAO ESP32S3**.
 
-<img width="1468" height="800" alt="uconsole X es32 s3" src="https://github.com/user-attachments/assets/0f6f086a-b2cb-4edc-a92f-d9e70e51a916" />
+<p align="center">
+  <img src="./images/wiring-diagram.png" alt="uConsole XIAO ESP32S3 Wiring Diagram" width="85%">
+</p>
 
+Only **four wires** are required to complete the USB connection.
 
----
+| AIO / Expansion Board | XIAO ESP32S3 |
+| :-------------------: | :----------: |
+| 5V                    | 5V           |
+| GND                   | GND          |
+| D+                    | D+           |
+| D−                    | D−           |
 
-### 𝑰𝒏𝒔𝒕𝒂𝒍𝒍𝒂𝒕𝒊𝒐𝒏
+After soldering these four connections, the XIAO ESP32S3 is detected by Linux as a native USB device and is ready for firmware development and future hardware expansion.
 
-𝑻𝒉𝒆 𝑿𝑰𝑨𝑶 𝑬𝑺𝑷32𝑺3 𝒊𝒔 𝒄𝒐𝒏𝒏𝒆𝒄𝒕𝒆𝒅 𝒖𝒔𝒊𝒏𝒈 𝒐𝒏𝒍𝒚 𝒇𝒐𝒖𝒓 𝑼𝑺𝑩 𝒔𝒊𝒈𝒏𝒂𝒍𝒔:
-
-- 5𝑽  ----------------------->vusb
-- 𝑮𝑵𝑫 ----------------------->GND (left 2nd after vusb)
-- 𝑫+  ------------------------>D+
-- 𝑫−  ------------------------->D-
 
 𝑶𝒏𝒄𝒆 𝒄𝒐𝒏𝒏𝒆𝒄𝒕𝒆𝒅, 𝑳𝒊𝒏𝒖𝒙 𝒅𝒆𝒕𝒆𝒄𝒕𝒔 𝒕𝒉𝒆 𝒃𝒐𝒂𝒓𝒅 𝒂𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒄𝒂𝒍𝒍𝒚 𝒂𝒔 𝒂𝒏 𝑬𝒔𝒑𝒓𝒆𝒔𝒔𝒊𝒇 𝑼𝑺𝑩 𝑱𝑻𝑨𝑮/𝑺𝒆𝒓𝒊𝒂𝒍 𝒅𝒆𝒗𝒊𝒄𝒆.
 <img width="3472" height="4640" alt="IMG_20260708_213010" src="https://github.com/user-attachments/assets/517dd05d-9e6c-41d3-bfdd-30adc05da52b" />
