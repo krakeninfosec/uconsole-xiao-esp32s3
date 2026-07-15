@@ -109,19 +109,121 @@ After soldering these four connections, the XIAO ESP32S3 is detected by Linux as
 
 ---
 
-### 𝑽𝒆𝒓𝒊𝒇𝒊𝒄𝒂𝒕𝒊𝒐𝒏
+### 🔍 Verifying Your Installation
 
-𝑨𝒇𝒕𝒆𝒓 𝒃𝒐𝒐𝒕𝒊𝒏𝒈 𝒕𝒉𝒆 𝒖𝑪𝒐𝒏𝒔𝒐𝒍𝒆, 𝒗𝒆𝒓𝒊𝒇𝒚 𝒕𝒉𝒂𝒕 𝒕𝒉𝒆 𝑿𝑰𝑨𝑶 𝑬𝑺𝑷32𝑺3 𝒊𝒔 𝒅𝒆𝒕𝒆𝒄𝒕𝒆𝒅.
+Once the XIAO ESP32S3 is connected, it's a good idea to verify that the board is detected correctly before moving on to future projects.
 
-```𝒃𝒂𝒔𝒉
-𝒍𝒔𝒖𝒔𝒃
+### Standard USB Check
+
+Run the following command:
+
+```bash
+lsusb
 ```
 
-𝑬𝒙𝒑𝒆𝒄𝒕𝒆𝒅 𝒐𝒖𝒕𝒑𝒖𝒕:
+If the installation was successful, you should see an entry similar to:
 
+```text
+Espressif USB JTAG/Serial Debug Unit
 ```
-𝑩𝒖𝒔 𝑿𝑿𝑿 𝑫𝒆𝒗𝒊𝒄𝒆 𝑿𝑿𝑿: 𝑰𝑫 303𝒂:1001 𝑬𝒔𝒑𝒓𝒆𝒔𝒔𝒊𝒇 𝑼𝑺𝑩 𝑱𝑻𝑨𝑮/𝒔𝒆𝒓𝒊𝒂𝒍 𝒅𝒆𝒃𝒖𝒈 𝒖𝒏𝒊𝒕
+
+<p align="center">
+  <img src="./image/lsusb-verification.MP4" alt="ESP32S3 detected by Linux" width="85%">
+</p>
+
+---
+
+## ⚙️ HackerGadgets AIO v2 Verification
+
+If you're using the **HackerGadgets AIO v2 Board**, you can verify the status of all onboard hardware using **aiov2_ctl**.
+
+Display the current board status:
+
+```bash
+sudo python3 aiov2_ctl.py --status
 ```
+
+Or, if **aiov2_ctl** is installed system-wide:
+
+```bash
+aiov2_ctl --status
+```
+
+This command shows the current status of:
+
+- GPS
+- LoRa
+- SDR
+- Internal USB
+- Battery information
+- Power usage
+
+Example output:
+
+```text
+GPS   : OFF
+LoRa  : OFF
+SDR   : OFF
+USB   : ON
+```
+
+---
+
+## 🎛️ Enable or Disable Hardware
+
+Turn a module **ON**:
+
+```bash
+aiov2_ctl GPS on
+aiov2_ctl LORA on
+aiov2_ctl SDR on
+aiov2_ctl USB on
+```
+
+Turn a module **OFF**:
+
+```bash
+aiov2_ctl GPS off
+aiov2_ctl LORA off
+aiov2_ctl SDR off
+aiov2_ctl USB off
+```
+
+---
+
+## ⚡ Live Monitoring
+
+Monitor power usage in real time:
+
+```bash
+aiov2_ctl --power
+```
+
+Watch the current GPIO and hardware state:
+
+```bash
+aiov2_ctl --watch
+```
+
+---
+
+## 📝 Quick Reference
+
+| Command | Description |
+|---------|-------------|
+| `lsusb` | Verify that Linux detects the ESP32S3 |
+| `aiov2_ctl --status` | Show the current AIO v2 status |
+| `aiov2_ctl GPS on` | Enable the GPS module |
+| `aiov2_ctl LORA on` | Enable the LoRa module |
+| `aiov2_ctl SDR on` | Enable the SDR module |
+| `aiov2_ctl USB on` | Enable the internal USB rail |
+| `aiov2_ctl --power` | Monitor live power usage |
+| `aiov2_ctl --watch` | Watch GPIO and hardware status in real time |
+
+> **Note**
+>
+> On the AIO v2 Board, some hardware modules are powered off by default. If a device isn't detected, check its status with `aiov2_ctl --status` before troubleshooting drivers or hardware connections.
+
 <img width="3472" height="4640" alt="lsusb" src="https://github.com/user-attachments/assets/92f50bbe-9c5c-490e-942f-a45ad0f929ba" />
 
 
