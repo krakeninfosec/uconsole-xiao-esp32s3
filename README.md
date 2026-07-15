@@ -128,7 +128,7 @@ Espressif USB JTAG/Serial Debug Unit
 ```
 
 <p align="center">
-  <img src="./image/lsusb-verification.MP4" alt="ESP32S3 detected by Linux" width="85%">
+  <img src="./image/lsusb-verification.mp4" alt="ESP32S3 detected by Linux" width="85%">
 </p>
 
 ---
